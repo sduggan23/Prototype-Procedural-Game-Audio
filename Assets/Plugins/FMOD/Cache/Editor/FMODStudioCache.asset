@@ -555,14 +555,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Wood Creak
   Guid:
-    Data1: 1329797210
-    Data2: 1340776218
-    Data3: 2086441151
-    Data4: -643993123
+    Data1: 442119351
+    Data2: 1135546249
+    Data3: -65628000
+    Data4: 360998827
   Banks:
   - {fileID: 1863959330916471052}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -722,7 +722,6 @@ MonoBehaviour:
   - {fileID: -3749718623816276612}
   - {fileID: 64277510181369757}
   - {fileID: 7367497986100065070}
-  - {fileID: 3252910480209382927}
   - {fileID: -7990675864132469482}
   - {fileID: -117689545970898620}
   - {fileID: 9117997138435326120}
@@ -748,12 +747,16 @@ MonoBehaviour:
   - {fileID: -1904228239649742868}
   - {fileID: 4842570134041794447}
   - {fileID: 6728584249999890553}
+  - {fileID: 4938099732823575959}
+  - {fileID: 8094398349733146925}
+  - {fileID: 7113898977508999378}
+  - {fileID: 1845368559213011654}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1863959330916471052}
   StringsBanks:
   - {fileID: 1561328792400493224}
-  cacheTime: 638355089336207431
+  cacheTime: 638355737757642666
   cacheVersion: 131609
 --- !u!114 &64277510181369757
 MonoBehaviour:
@@ -898,13 +901,40 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638355089336207431
+  lastModified: 638355737757642666
   FileSizes:
   - Name: Desktop
-    Value: 4150
+    Value: 4302
   - Name: HTML5
-    Value: 4150
+    Value: 4302
   Exists: 1
+--- !u!114 &1845368559213011654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3D Rain
+  m_EditorClassIdentifier: 
+  Path: event:/3D Rain
+  Guid:
+    Data1: -568101688
+    Data2: 1218540179
+    Data3: -397069915
+    Data4: -1322314126
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 46438
 --- !u!114 &1863959330916471052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -920,10 +950,10 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638355089336167533
+  lastModified: 638355737757542948
   FileSizes:
   - Name: Desktop
-    Value: 1136448
+    Value: 3231776
   - Name: HTML5
     Value: 1136320
   Exists: 1
@@ -1024,33 +1054,6 @@ MonoBehaviour:
   - Name: HTML5
     Value: 222464
   Exists: 1
---- !u!114 &3252910480209382927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Rain, Vegetation, Light, Forest, Hit Leaves 01 SND3425
-  m_EditorClassIdentifier: 
-  Path: event:/Rain, Vegetation, Light, Forest, Hit Leaves 01 SND3425
-  Guid:
-    Data1: -568101688
-    Data2: 1218540179
-    Data3: -397069915
-    Data4: -1322314126
-  Banks:
-  - {fileID: 1863959330916471052}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 46438
 --- !u!114 &3293997980119695099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,8 +1179,8 @@ MonoBehaviour:
     Data3: 1244236687
     Data4: 595743019
   Banks:
-  - {fileID: 1863959330916471052}
   - {fileID: 7971805233206480576}
+  - {fileID: 1863959330916471052}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -1290,6 +1293,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &4938099732823575959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BG Music
+  m_EditorClassIdentifier: 
+  Path: event:/BG Music
+  Guid:
+    Data1: 878199278
+    Data2: 1133380083
+    Data3: -1753277780
+    Data4: -266760369
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 115636
 --- !u!114 &5448060439977761696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,6 +1510,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1274
+--- !u!114 &7113898977508999378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2D Rain
+  m_EditorClassIdentifier: 
+  Path: event:/2D Rain
+  Guid:
+    Data1: 1123670819
+    Data2: 1274614405
+    Data3: 1161724600
+    Data4: -512571186
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 46438
 --- !u!114 &7191868390430387116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,6 +1617,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7646773153522269881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Wood
+  m_EditorClassIdentifier: 
+  Name: Wood
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1769851183
+    data2: 539490590
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7971805233206480576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,6 +1687,35 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &8094398349733146925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Footsteps
+  Guid:
+    Data1: 1836775470
+    Data2: 1231010095
+    Data3: -102501466
+    Data4: -886552014
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9199419344273745096}
+  - {fileID: 7646773153522269881}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &8519547090279311739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1704,6 +1814,30 @@ MonoBehaviour:
     data1: 4130366537
     data2: 2699559447
   Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &9199419344273745096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Dirt
+  m_EditorClassIdentifier: 
+  Name: Dirt
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 903586167
+    data2: 2727205033
+  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
