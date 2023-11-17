@@ -231,6 +231,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 147
+--- !u!114 &-5011649682558217147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music_lvl_01_drone_loop
+  m_EditorClassIdentifier: 
+  Path: event:/Music_lvl_01_drone_loop
+  Guid:
+    Data1: -216426633
+    Data2: 1177384312
+    Data3: 1107567785
+    Data4: 788068498
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 9056
 --- !u!114 &-4820867948848440811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,8 +593,8 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
-  Length: 4000
+  MaxDistance: 35
+  Length: 3209
 --- !u!114 &-1170834777295422390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,6 +619,59 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-989199292923835638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Grass Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Grass Footsteps
+  Guid:
+    Data1: 333323118
+    Data2: 1268499833
+    Data3: -993765219
+    Data4: 1348827130
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8549227396019790217}
+  - {fileID: 5588053058701876536}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
+--- !u!114 &-901191392600230939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Carpet
+  m_EditorClassIdentifier: 
+  Name: Carpet
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1221028966
+    data2: 452954629
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-807841966531485059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,7 +687,7 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638355060289263597
+  lastModified: 638356777723033525
   FileSizes:
   - Name: Desktop
     Value: 10454368
@@ -751,12 +831,16 @@ MonoBehaviour:
   - {fileID: 8094398349733146925}
   - {fileID: 7113898977508999378}
   - {fileID: 1845368559213011654}
+  - {fileID: 681037968508464235}
+  - {fileID: 3693082696088424824}
+  - {fileID: -5011649682558217147}
+  - {fileID: -989199292923835638}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1863959330916471052}
   StringsBanks:
   - {fileID: 1561328792400493224}
-  cacheTime: 638355737757642666
+  cacheTime: 638356806687659020
   cacheVersion: 131609
 --- !u!114 &64277510181369757
 MonoBehaviour:
@@ -809,6 +893,57 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &496715681647725124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Grass
+  m_EditorClassIdentifier: 
+  Name: Grass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3939642626
+    data2: 3198144317
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &681037968508464235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Amb_night_loop
+  m_EditorClassIdentifier: 
+  Path: event:/Amb_night_loop
+  Guid:
+    Data1: 1841566879
+    Data2: 1214650726
+    Data3: 1938604179
+    Data4: -2064634178
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 99927
 --- !u!114 &844371096195299770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,12 +1036,12 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638355737757642666
+  lastModified: 638356806687659020
   FileSizes:
   - Name: Desktop
-    Value: 4302
+    Value: 4556
   - Name: HTML5
-    Value: 4302
+    Value: 4556
   Exists: 1
 --- !u!114 &1845368559213011654
 MonoBehaviour:
@@ -950,10 +1085,10 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638355737757542948
+  lastModified: 638356806687579223
   FileSizes:
   - Name: Desktop
-    Value: 3231776
+    Value: 8860096
   - Name: HTML5
     Value: 1136320
   Exists: 1
@@ -1188,6 +1323,33 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3693082696088424824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Wolf
+  m_EditorClassIdentifier: 
+  Path: event:/Wolf
+  Guid:
+    Data1: -1788613844
+    Data2: 1216689918
+    Data3: 853164675
+    Data4: 1215182252
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 100
+  Length: 34000
 --- !u!114 &4149441857525104600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,6 +1532,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 999
+--- !u!114 &5588053058701876536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Grass Footsteps/Wood
+  m_EditorClassIdentifier: 
+  Name: Wood
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1769851183
+    data2: 539490590
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6197119293306112854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,7 +1722,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 46438
+  Length: 37500
 --- !u!114 &7191868390430387116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1701,18 +1887,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Footsteps
   Guid:
-    Data1: 1836775470
-    Data2: 1231010095
-    Data3: -102501466
-    Data4: -886552014
+    Data1: -1652826286
+    Data2: 1293344155
+    Data3: 1230266814
+    Data4: -1130028027
   Banks:
   - {fileID: 1863959330916471052}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 9199419344273745096}
   - {fileID: 7646773153522269881}
+  - {fileID: -901191392600230939}
+  - {fileID: 496715681647725124}
   MinDistance: 1
   MaxDistance: 20
   Length: 8000
@@ -1736,6 +1923,30 @@ MonoBehaviour:
   ID:
     data1: 92787679
     data2: 313628491
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8549227396019790217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Grass Footsteps/Grass
+  m_EditorClassIdentifier: 
+  Name: Grass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3939642626
+    data2: 3198144317
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -1814,30 +2025,6 @@ MonoBehaviour:
     data1: 4130366537
     data2: 2699559447
   Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &9199419344273745096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Footsteps/Dirt
-  m_EditorClassIdentifier: 
-  Name: Dirt
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 903586167
-    data2: 2727205033
-  Type: 0
   IsGlobal: 0
   Labels: []
   Exists: 1
