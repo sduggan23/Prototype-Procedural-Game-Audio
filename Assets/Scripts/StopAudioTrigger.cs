@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class StopAudioTrigger : MonoBehaviour
 {
-    [SerializeField] private string path;
-    [SerializeField] private FMOD.Studio.EventInstance eventInstanceRef;
+    [SerializeField] private string soundEffect = "event:/Character/Breathing";
+
+    FMOD.Studio.EventInstance eventInstanceRef;
 
     void Start()
     {
-        eventInstanceRef = FMODUnity.RuntimeManager.CreateInstance(path);
+        eventInstanceRef = FMODUnity.RuntimeManager.CreateInstance(soundEffect);
+        eventInstanceRef.start();
     }
     void OnTriggerEnter(Collider other)
     {
@@ -22,5 +24,6 @@ public class StopAudioTrigger : MonoBehaviour
     private void StopSound()
     {
         eventInstanceRef.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //eventInstanceRef.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }
