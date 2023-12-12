@@ -8,7 +8,7 @@ public class AudioControl : MonoBehaviour
 {
     private EventInstance eventInstanceRef;
 
-
+    [SerializeField] private float parameterValue;
     [SerializeField] private string soundEffect;
     [SerializeField] private string gameStartedParameter;
     [SerializeField] private string gameHalfwayParameter;
@@ -50,6 +50,11 @@ public class AudioControl : MonoBehaviour
     public void SoundEnded()
     {
         eventInstanceRef.setParameterByName(gameEndedParameter, 1f);
+    }
+
+    public void SetAmbienceParameter()
+    {
+        eventInstanceRef.setParameterByName(soundEffect, parameterValue);
     }
 
 }

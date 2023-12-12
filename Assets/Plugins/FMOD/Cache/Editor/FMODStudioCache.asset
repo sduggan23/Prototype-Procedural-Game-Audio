@@ -649,7 +649,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 2403335413884169193}
   MinDistance: 1
   MaxDistance: 20
   Length: 37500
@@ -1377,7 +1378,7 @@ MonoBehaviour:
   - {fileID: 1863959330916471052}
   StringsBanks:
   - {fileID: 1561328792400493224}
-  cacheTime: 638379314933803441
+  cacheTime: 638379755199985954
   cacheVersion: 131609
 --- !u!114 &225506074204250147
 MonoBehaviour:
@@ -1627,12 +1628,12 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638379314933803441
+  lastModified: 638379755199985954
   FileSizes:
   - Name: Desktop
-    Value: 5670
+    Value: 5714
   - Name: HTML5
-    Value: 5670
+    Value: 5714
   Exists: 1
 --- !u!114 &1664078980811357876
 MonoBehaviour:
@@ -1705,10 +1706,10 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638379314933483626
+  lastModified: 638379755199805348
   FileSizes:
   - Name: Desktop
-    Value: 14198304
+    Value: 14198816
   - Name: HTML5
     Value: 1136320
   Exists: 1
@@ -1766,6 +1767,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8125
+--- !u!114 &2403335413884169193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/2D Rain/RainIntensity
+  m_EditorClassIdentifier: 
+  Name: RainIntensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 102286741
+    data2: 2457330106
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &2543201417496182724
 MonoBehaviour:
   m_ObjectHideFlags: 0
