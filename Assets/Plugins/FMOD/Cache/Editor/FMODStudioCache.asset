@@ -239,6 +239,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6734995300290589298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heartbeat Adaptive/SoundEnded
+  m_EditorClassIdentifier: 
+  Name: SoundEnded
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1271380122
+    data2: 1537809401
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6528296196406982715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,6 +851,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 653
+--- !u!114 &-3280453219269737336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Wind
+  Guid:
+    Data1: -71590484
+    Data2: 1230651354
+    Data3: -612669291
+    Data4: 1631488348
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6090700594586082762}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
 --- !u!114 &-3074482914512773766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -885,6 +937,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 56888
+--- !u!114 &-2908906090213673397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heartbeat Adaptive/IsHalfWay
+  m_EditorClassIdentifier: 
+  Name: IsHalfWay
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1404601124
+    data2: 3212944597
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2549188593599026409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,6 +1270,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 54339
+--- !u!114 &-109137692068063030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heartbeat Adaptive/SoundStarted
+  m_EditorClassIdentifier: 
+  Name: SoundStarted
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2294832784
+    data2: 3343978293
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,12 +1370,14 @@ MonoBehaviour:
   - {fileID: 3181147689996451471}
   - {fileID: 2806030301566269099}
   - {fileID: 8024420903076705967}
+  - {fileID: 2182175976260017821}
+  - {fileID: -3280453219269737336}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1863959330916471052}
   StringsBanks:
   - {fileID: 1561328792400493224}
-  cacheTime: 638361187431457525
+  cacheTime: 638379314933803441
   cacheVersion: 131609
 --- !u!114 &225506074204250147
 MonoBehaviour:
@@ -1525,12 +1627,12 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638361187431457525
+  lastModified: 638379314933803441
   FileSizes:
   - Name: Desktop
-    Value: 5528
+    Value: 5670
   - Name: HTML5
-    Value: 5528
+    Value: 5670
   Exists: 1
 --- !u!114 &1664078980811357876
 MonoBehaviour:
@@ -1603,10 +1705,10 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638361187431242892
+  lastModified: 638379314933483626
   FileSizes:
   - Name: Desktop
-    Value: 14045632
+    Value: 14198304
   - Name: HTML5
     Value: 1136320
   Exists: 1
@@ -1634,6 +1736,36 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &2182175976260017821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Heartbeat Adaptive
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Heartbeat Adaptive
+  Guid:
+    Data1: -926310869
+    Data2: 1127356948
+    Data3: -339001971
+    Data4: 820483138
+  Banks:
+  - {fileID: 1863959330916471052}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -109137692068063030}
+  - {fileID: -6734995300290589298}
+  - {fileID: -2908906090213673397}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8125
 --- !u!114 &2543201417496182724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2155,6 +2287,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 999
+--- !u!114 &6090700594586082762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Wind/WindIntensity
+  m_EditorClassIdentifier: 
+  Name: WindIntensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1151778444
+    data2: 3070142732
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6197119293306112854
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,16 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 public class AudioControl : MonoBehaviour
 {
+    private EventInstance eventInstanceRef;
+
+
     [SerializeField] private string soundEffect;
-    FMOD.Studio.EventInstance eventInstanceRef;
+    [SerializeField] private string gameStartedParameter;
+    [SerializeField] private string gameHalfwayParameter;
+    [SerializeField] private string gameEndedParameter;
+
+
 
     void Start()
     {
-        eventInstanceRef = FMODUnity.RuntimeManager.CreateInstance(soundEffect);
-        //eventInstanceRef.start();
+        eventInstanceRef = RuntimeManager.CreateInstance(soundEffect);
+
     }
     void OnTriggerEnter(Collider other)
     {
@@ -27,4 +36,20 @@ public class AudioControl : MonoBehaviour
             eventInstanceRef.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
     }
+
+    public void SoundStarted()
+    {
+        eventInstanceRef.setParameterByName(gameStartedParameter, 1f);
+    }
+
+    public void Halfway()
+    {
+        eventInstanceRef.setParameterByName(gameHalfwayParameter, 1f);
+    }
+
+    public void SoundEnded()
+    {
+        eventInstanceRef.setParameterByName(gameEndedParameter, 1f);
+    }
+
 }
