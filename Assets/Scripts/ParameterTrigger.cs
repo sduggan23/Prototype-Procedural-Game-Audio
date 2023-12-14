@@ -11,7 +11,7 @@ public class ParameterTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            AudioManager.instance.SetAmbienceParameter(parameterName, PlayerFear.instance.currentFear += 25);
+            AudioManager.instance.SetAmbienceParameter(parameterName, PlayerFear.instance.currentFear += 10);
         }
     }
 }
