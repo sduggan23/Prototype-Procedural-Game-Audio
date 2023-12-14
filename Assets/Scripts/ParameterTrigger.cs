@@ -5,13 +5,13 @@ using UnityEngine;
 public class ParameterTrigger : MonoBehaviour
 {
     [SerializeField] private string parameterName;
-    [SerializeField] private float parameterValue;
+    //[SerializeField] private float parameterValue;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            AudioManager.instance.SetAmbienceParameter(parameterName, parameterValue);
+            AudioManager.instance.SetAmbienceParameter(parameterName, PlayerFear.instance.currentFear += 25);
         }
     }
 }

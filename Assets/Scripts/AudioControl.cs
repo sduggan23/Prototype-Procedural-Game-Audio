@@ -7,14 +7,10 @@ using FMOD.Studio;
 public class AudioControl : MonoBehaviour
 {
     private EventInstance eventInstanceRef;
-
-    [SerializeField] private float parameterValue;
     [SerializeField] private string soundEffect;
     [SerializeField] private string gameStartedParameter;
     [SerializeField] private string gameHalfwayParameter;
     [SerializeField] private string gameEndedParameter;
-
-
 
     void Start()
     {
@@ -40,6 +36,7 @@ public class AudioControl : MonoBehaviour
     public void SoundStarted()
     {
         eventInstanceRef.setParameterByName(gameStartedParameter, 1f);
+        Debug.Log(soundEffect + "played");
     }
 
     public void Halfway()
@@ -51,10 +48,4 @@ public class AudioControl : MonoBehaviour
     {
         eventInstanceRef.setParameterByName(gameEndedParameter, 1f);
     }
-
-    public void SetAmbienceParameter()
-    {
-        eventInstanceRef.setParameterByName(soundEffect, parameterValue);
-    }
-
 }

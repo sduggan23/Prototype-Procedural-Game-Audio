@@ -21,8 +21,9 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         // Initialise multiple ambience events at the start
-        InitializeAmbience(FMODEvents.instance.wind);
-        InitializeAmbience(FMODEvents.instance.rain);
+        InitializeAmbience(FMODEvents.instance.heartbeatGain);
+        InitializeAmbience(FMODEvents.instance.heartbeatPitch);
+
     }
 
     private void InitializeAmbience(EventReference ambienceEventRef)
@@ -45,4 +46,5 @@ public class AudioManager : MonoBehaviour
             eventInstance.setParameterByName(parameterName, parameterValue);
         }
     }
+
 }

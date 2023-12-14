@@ -263,6 +263,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-6605711401733344327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heartbeat/HeartbeatGainParameter
+  m_EditorClassIdentifier: 
+  Name: HeartbeatGainParameter
+  StudioPath: 
+  Min: 0
+  Max: 50
+  Default: 0
+  ID:
+    data1: 4257436520
+    data2: 1373674351
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-6528296196406982715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,8 +673,7 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: 2403335413884169193}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 37500
@@ -875,8 +898,7 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: 6090700594586082762}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 12000
@@ -1378,7 +1400,7 @@ MonoBehaviour:
   - {fileID: 1863959330916471052}
   StringsBanks:
   - {fileID: 1561328792400493224}
-  cacheTime: 638379755199985954
+  cacheTime: 638381090698791371
   cacheVersion: 131609
 --- !u!114 &225506074204250147
 MonoBehaviour:
@@ -1628,12 +1650,12 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638379755199985954
+  lastModified: 638381090698791371
   FileSizes:
   - Name: Desktop
-    Value: 5714
+    Value: 5736
   - Name: HTML5
-    Value: 5714
+    Value: 5736
   Exists: 1
 --- !u!114 &1664078980811357876
 MonoBehaviour:
@@ -1706,10 +1728,10 @@ MonoBehaviour:
   Path: ../../../FMOD Studio/examples/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638379755199805348
+  lastModified: 638381090698671593
   FileSizes:
   - Name: Desktop
-    Value: 14198816
+    Value: 14199392
   - Name: HTML5
     Value: 1136320
   Exists: 1
@@ -1767,30 +1789,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8125
---- !u!114 &2403335413884169193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/2D Rain/RainIntensity
-  m_EditorClassIdentifier: 
-  Name: RainIntensity
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 102286741
-    data2: 2457330106
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &2543201417496182724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1838,7 +1836,9 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 7637096463083576422}
+  - {fileID: -6605711401733344327}
   MinDistance: 1
   MaxDistance: 20
   Length: 8125
@@ -2312,30 +2312,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 999
---- !u!114 &6090700594586082762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Wind/WindIntensity
-  m_EditorClassIdentifier: 
-  Name: WindIntensity
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1151778444
-    data2: 3070142732
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &6197119293306112854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2553,6 +2529,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7637096463083576422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Heartbeat/HeartbeatPitchParameter
+  m_EditorClassIdentifier: 
+  Name: HeartbeatPitchParameter
+  StudioPath: 
+  Min: 0
+  Max: 50
+  Default: 0
+  ID:
+    data1: 2846012493
+    data2: 807101850
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &7971805233206480576
 MonoBehaviour:
   m_ObjectHideFlags: 0

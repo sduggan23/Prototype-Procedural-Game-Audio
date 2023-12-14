@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMOD.Studio;
 
 public class StopAudioTrigger : MonoBehaviour
 {
     [SerializeField] private string soundEffect = "event:/Character/Breathing";
 
-    FMOD.Studio.EventInstance eventInstanceRef;
+    private EventInstance eventInstanceRef;
 
     void Start()
     {
         eventInstanceRef = FMODUnity.RuntimeManager.CreateInstance(soundEffect);
-        eventInstanceRef.start();
+        //eventInstanceRef.start();
     }
     void OnTriggerEnter(Collider other)
     {
